@@ -100,10 +100,10 @@ const Hero = ({ profile }) => {
                         PORTFOLIO // AVAILABLE_FOR_HIRING
                     </motion.div>
 
-                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tighter leading-tight sm:leading-none">
                         <span className="text-white">HELLO. I AM</span>
                         <br />
-                        <span className="text-gradient drop-shadow-[0_0_15px_rgba(99,102,241,0.3)] uppercase">
+                        <span className="text-gradient drop-shadow-[0_0_15px_rgba(99,102,241,0.3)] uppercase break-words">
                             {data.name}
                         </span>
                     </h1>

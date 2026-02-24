@@ -22,7 +22,7 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="bg-[#030014] text-white min-h-screen selection:bg-primary/30">
+        <div className="bg-[#030014] text-white min-h-screen selection:bg-primary/30 overflow-x-hidden w-full flex flex-col">
           <CustomCursor />
           <Toaster
             position="bottom-right"
