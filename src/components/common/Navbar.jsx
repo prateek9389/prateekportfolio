@@ -20,6 +20,7 @@ const Navbar = () => {
         { name: 'SKILLS', href: '#skills', icon: '02' },
         { name: 'ABOUT', href: '#about', icon: '03' },
         { name: 'CONTACT', href: '#contact', icon: '04' },
+        { name: 'ADMIN PANEL', href: '/admin', icon: '05' },
     ];
 
     return (

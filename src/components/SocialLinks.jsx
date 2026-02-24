@@ -78,6 +78,12 @@ const SocialLinks = ({ variant = 'default' }) => {
         visible: { y: 0, opacity: 1 }
     };
 
+    const formatUrl = (url) => {
+        if (!url) return '#';
+        if (url.startsWith('http://') || url.startsWith('https://')) return url;
+        return `https://${url}`;
+    };
+
     const getStyles = (id) => {
         switch (id) {
             case 'github': return 'hover:text-[#333] hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]';
@@ -97,7 +103,7 @@ const SocialLinks = ({ variant = 'default' }) => {
             {links.map((link) => (
                 <motion.a
                     key={link.id}
-                    href={link.url}
+                    href={formatUrl(link.url)}
                     target="_blank"
                     rel="noopener noreferrer"
                     variants={itemVariants}
