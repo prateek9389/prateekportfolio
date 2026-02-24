@@ -17,7 +17,7 @@ import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
 
 const AdminDashboard = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(true);
+    const [sidebarOpen, setSidebarOpen] = useState(window.innerWidth > 768);
     const { logout, currentUser } = useAuth();
     const navigate = useNavigate();
 
@@ -75,7 +75,7 @@ const AdminDashboard = () => {
                     </AnimatePresence>
                     <button
                         onClick={() => setSidebarOpen(!sidebarOpen)}
-                        className="p-1.5 hover:bg-white/5 rounded-lg transition-colors md:block hidden"
+                        className="p-1.5 hover:bg-white/5 rounded-lg transition-colors"
                     >
                         {sidebarOpen ? <X size={20} /> : <Menu size={20} />}
                     </button>
@@ -115,9 +115,9 @@ const AdminDashboard = () => {
             {/* Main Content */}
             <main className="flex-1 flex flex-col h-screen overflow-hidden overflow-y-auto">
                 {/* Top Header */}
-                <header className="glass-navbar h-20 px-8 flex items-center justify-between sticky top-0 z-20">
+                <header className="glass-navbar h-20 px-4 md:px-8 flex items-center justify-between sticky top-0 z-20">
                     <div className="flex items-center gap-4">
-                        <h2 className="text-xl font-bold md:block hidden">Welcome back, Admin</h2>
+                        <h2 className="text-lg md:text-xl font-bold md:block hidden">Welcome back, Admin</h2>
                     </div>
 
                     <div className="flex items-center gap-6">
@@ -140,7 +140,7 @@ const AdminDashboard = () => {
                 </header>
 
                 {/* Dynamic Page Content */}
-                <div className="p-8">
+                <div className="p-4 md:p-8">
                     <Outlet />
                 </div>
             </main>

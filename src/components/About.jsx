@@ -12,7 +12,7 @@ const About = ({ profile }) => {
     const data = profile || defaultData;
 
     return (
-        <section id="about" className="py-24 relative">
+        <section id="about" className="py-16 md:py-24 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <motion.div
@@ -41,23 +41,23 @@ const About = ({ profile }) => {
                         transition={{ duration: 0.8 }}
                         className="w-full lg:w-1/2"
                     >
-                        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                             {data.aboutTitle.split(' ').slice(0, -1).join(' ')} <span className="text-gradient">{data.aboutTitle.split(' ').pop()}</span>
                         </h2>
-                        <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+                        <p className="text-gray-400 text-base sm:text-lg mb-6 leading-relaxed">
                             {data.aboutText1}
                         </p>
-                        <p className="text-gray-400 text-lg mb-8 leading-relaxed">
+                        <p className="text-gray-400 text-base sm:text-lg mb-8 leading-relaxed">
                             {data.aboutText2}
                         </p>
 
-                        <div className="grid grid-cols-2 gap-8">
+                        <div className="grid grid-cols-2 gap-4 sm:gap-8">
                             <div>
-                                <h4 className="text-2xl font-bold text-white mb-1">{data.experience}</h4>
+                                <h4 className="text-xl sm:text-2xl font-bold text-white mb-1">{data.experience}</h4>
                                 <p className="text-primary-light font-medium">Experience</p>
                             </div>
                             <div>
-                                <h4 className="text-2xl font-bold text-white mb-1">{data.projectsCount}</h4>
+                                <h4 className="text-xl sm:text-2xl font-bold text-white mb-1">{data.projectsCount}</h4>
                                 <p className="text-primary-light font-medium">Projects Delivered</p>
                             </div>
                         </div>

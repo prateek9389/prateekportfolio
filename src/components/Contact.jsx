@@ -47,11 +47,11 @@ const Contact = ({ profile }) => {
     };
 
     return (
-        <section id="contact" className="py-24 relative overflow-hidden">
+        <section id="contact" className="py-16 md:py-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Get In <span className="text-gradient">Touch</span></h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Get In <span className="text-gradient">Touch</span></h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                         Have a project in mind or just want to say hi? Feel free to reach out!
                     </p>
                 </div>
@@ -102,7 +102,7 @@ const Contact = ({ profile }) => {
                         viewport={{ once: true }}
                         className="w-full lg:w-2/3"
                     >
-                        <form onSubmit={handleSubmit} className="glass-card p-8 md:p-12 rounded-3xl space-y-6">
+                        <form onSubmit={handleSubmit} className="glass-card p-6 sm:p-8 md:p-12 rounded-3xl space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-400 mb-2">Name</label>

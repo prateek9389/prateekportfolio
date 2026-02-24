@@ -89,8 +89,8 @@ const Home = () => {
 
                         <div className="relative">
                             {/* Background Decorative Elements */}
-                            <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/10 blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
-                            <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-accent-violet/5 blur-[180px] rounded-full pointer-events-none" />
+                            <div className="absolute top-0 left-1/4 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-primary/10 blur-[100px] md:blur-[150px] rounded-full pointer-events-none -translate-y-1/2" />
+                            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] md:w-[600px] md:h-[600px] bg-accent-violet/5 blur-[120px] md:blur-[180px] rounded-full pointer-events-none" />
 
                             <Projects projects={projects.length > 0 ? projects : null} profile={profile} />
                             <Skills skills={skills} profile={profile} />
@@ -101,17 +101,17 @@ const Home = () => {
                 )}
             </main>
 
-            <footer className="relative z-10 py-12 border-t border-white/5 text-center bg-[#030014]/80 backdrop-blur-md">
+            <footer className="relative z-10 py-8 md:py-12 border-t border-white/5 text-center bg-[#030014]/80 backdrop-blur-md">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="mb-8">
+                    <div className="mb-6 md:mb-8">
                         <SocialLinks variant="footer" />
                     </div>
-                    <p className="font-mono text-[10px] text-gray-500 tracking-[0.3em] mb-4 uppercase">
+                    <p className="font-mono text-[8px] sm:text-[10px] text-gray-500 tracking-[0.2em] sm:tracking-[0.3em] mb-4 uppercase">
                         System status: <span className="text-accent-cyan">OPERATIONAL</span> // Latency: <span className="text-accent-cyan">14ms</span>
                     </p>
-                    <p className="text-gray-400 text-sm font-light">
+                    <p className="text-gray-400 text-xs sm:text-sm font-light">
                         © {new Date().getFullYear()} <span className="text-white font-bold tracking-tighter">PORTFOLIO</span>.
-                        Built with <span className="text-primary-light">Vite</span> & <span className="text-primary-light">Firebase</span>.
+                        Built with <span className="text-primary-light">React</span> & <span className="text-primary-light">Firebase</span>.
                     </p>
                 </div>
             </footer>

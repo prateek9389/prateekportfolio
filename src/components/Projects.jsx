@@ -106,7 +106,7 @@ const Projects = ({ projects, profile }) => {
     const displayProjects = projects || defaultProjects;
 
     return (
-        <section id="projects" className="py-32 relative">
+        <section id="projects" className="py-16 md:py-32 relative">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-20">
                     <div className="font-mono text-[10px] text-primary tracking-[0.4em] mb-4 uppercase">PROJECT_ARCHIVE // 01</div>
@@ -120,12 +120,12 @@ const Projects = ({ projects, profile }) => {
                                 const lastWord = titleParts[titleParts.length - 1];
 
                                 return (
-                                    <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">
+                                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">
                                         {mainTitle} <span className="text-gradient">{lastWord}</span>
                                     </h2>
                                 );
                             })()}
-                            <p className="text-gray-400 text-lg font-light leading-relaxed">
+                            <p className="text-gray-400 text-base sm:text-lg font-light leading-relaxed">
                                 {profile?.projectsSubtitle || "A curated selection of high-impact systems, designed with scalability and high-fidelity aesthetics in mind. Each module represents a milestone in technical execution."}
                             </p>
                         </div>

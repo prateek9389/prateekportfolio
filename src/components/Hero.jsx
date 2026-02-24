@@ -100,7 +100,7 @@ const Hero = ({ profile }) => {
                         PORTFOLIO // AVAILABLE_FOR_HIRING
                     </motion.div>
 
-                    <h1 className="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none">
                         <span className="text-white">HELLO. I AM</span>
                         <br />
                         <span className="text-gradient drop-shadow-[0_0_15px_rgba(99,102,241,0.3)] uppercase">
@@ -108,7 +108,7 @@ const Hero = ({ profile }) => {
                         </span>
                     </h1>
 
-                    <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-400 mb-12 leading-relaxed font-light">
+                    <p className="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-gray-400 mb-12 leading-relaxed font-light">
                         {data.title}
                         <br />
                         <span className="text-white/80">{data.bio}</span>

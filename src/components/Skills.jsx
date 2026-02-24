@@ -56,15 +56,15 @@ const Skills = ({ skills, profile }) => {
     const skillsSubtitle = profile?.skillsSubtitle || "Mapping the technical architecture and neural throughput of my development stack. Optimized for high-concurrency and superior visual fidelity.";
 
     return (
-        <section id="skills" className="py-32 relative overflow-hidden">
+        <section id="skills" className="py-16 md:py-32 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
                     <div className="max-w-2xl">
                         <div className="font-mono text-[10px] text-primary tracking-[0.4em] mb-4 uppercase">TECHNICAL_STACK // 02</div>
-                        <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">
+                        <h2 className="text-3xl sm:text-4xl md:text-6xl font-black mb-6 tracking-tighter uppercase">
                             {mainTitle} <span className="text-gradient">{lastWord}</span>
                         </h2>
-                        <p className="text-gray-400 text-lg font-light leading-relaxed">
+                        <p className="text-gray-400 text-base sm:text-lg font-light leading-relaxed">
                             {skillsSubtitle}
                         </p>
                     </div>
